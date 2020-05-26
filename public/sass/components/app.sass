@@ -1,0 +1,32 @@
+.welcome-container
+  padding: 0 10px
+  +display-column
+  height: inherit
+  align-items: center
+  word-break: break-word
+  justify-content: center
+  color: $black-color
+  .greetings
+    animation: contentRevealAnimation 1s forwards 0s ease
+  .company-name
+    margin: 12px 0
+    font-size: 2.6rem
+    font-weight: bold
+    animation: contentRevealAnimation 1s forwards 0s ease
+  .description
+    text-align: center
+    animation: contentRevealAnimation 1s forwards 0s ease
+  .home-button
+    border: none
+    margin-top: 20px
+    padding: 10px 15px
+    border-radius: 4px
+    color: $white-color
+    background: $black-color
+    animation: contentRevealAnimation 1s forwards 0s ease
+    &:hover
+      cursor: pointer
+      i
+        animation: buttonIcon .8s infinite 0s ease-in-out
+    i
+      margin-left: 10px

@@ -1,0 +1,31 @@
+// color variables
+$background-yello: #FFDF57
+$black-color: #341c08
+$white-color: #FCFCFA
+
+// ---------- declaring mixins ----------
+=display-flex
+  display: flex
+  align-items: center 
+  justify-content: space-between
+
+=display-column
+  display: flex
+  flex-direction: column
+
+=display-grid
+  display: grid
+  grid-column-gap: 10px
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
+
+// ----------- declaring base styles --------------
+*
+  padding: 0
+  margin: 0
+  font-family: Roboto, sans-serif
+
+body
+  background: $background-yello
+  height: 100vh
+  #root
+    height: inherit
